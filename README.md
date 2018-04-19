@@ -5,5 +5,5 @@
 ###### os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 ###### reference byPix2Pix (Image-to-Image Translation with Conditional Adversarial Networks)
-![img](../notebook_material/pix2pix.jpg)
+![img](gan_image_1.jpg)
 ###### https://github.com/affinelayer/pix2pix-tensorflow
