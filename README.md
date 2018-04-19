@@ -6,4 +6,6 @@
 
 ###### reference byPix2Pix (Image-to-Image Translation with Conditional Adversarial Networks)
 ![img](gan_image_1.jpg)
-###### https://github.com/affinelayer/pix2pix-tensorflow
+###### Along with the epoch, the image performs better 
+###### The code is reference by this github : https://github.com/affinelayer/pix2pix-tensorflow
+######
