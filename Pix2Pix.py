@@ -12,10 +12,7 @@
 
 '''Basic package'''
 import os
-# 告訴系統要第幾張卡被看到。 Ex. 硬體總共有8張顯卡，以下設定只讓系統看到第1張顯卡
-# 若沒設定，則 Tensorflow 在運行時，預設會把所有卡都佔用
-# 要看裝置內顯卡數量及目前狀態的話，請在終端機內輸入 "nvidia-smi"
-# 若你的裝置只有一張顯卡可以使用，可以忽略此設定
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
@@ -168,9 +165,7 @@ generators.start_train_threads()
 
 
 def generator(x, dim, out_dim):
-    '''
-    論文當中的 generator 採用 U-Net，前半段 Encoder feature maps 連結到後半段 Decoder 對應 feature maps
-    '''
+   
     # encoder, decoder 每層 filter 數量
     e_dims = [dim] + [dim*2] + [dim*4] + [dim*8]*5
     d_dims = e_dims[::-1][1:]
@@ -235,8 +230,7 @@ def discriminator(x, dim):
 
 
 # ### Tensorflow- 建立靜態圖  
-# **靜態圖**就像一張計畫圖一樣，定義計算流程。實際運算必須靠 **<span style="color:red;"> Session </span>** 來執行
-# 
+ 
 
 # In[ ]:
 
